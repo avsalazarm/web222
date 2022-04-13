@@ -1,0 +1,181 @@
+<!--
+/**
+ * WEB222 – Final Assignment
+ *
+ * Honesty Statement:
+ * I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied * manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and/* or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+ *
+ *      Name: <Astrid Salazar>
+ *      Student ID: <159580182>
+ *      Date: <13/04/2022>
+ **/
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Final Assignment</title>
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" href="./css/design.css" type="text/css" />
+  </head>
+  <body>
+    <section class="bg-light text-center">
+      <h1 class="text-center">Astrid Salazar</h1><br>
+      <h3 class="text-center"><i>Computer Programmer</i></h3>
+      <div class="container">
+        <div class="img-container">
+          <img src="./images/img01.jpg" alt="computer programmer" />
+        </div>
+        <br>
+      </div>
+      <a href="./resume/Resume.docx" download>
+        <button class="button">Resume</button>
+      </a>
+      <a href="#contact-me">
+        <button class="button">Contact Me</button>
+      </a>
+    </section>
+
+    <section class="bg-med">
+      <div class="container">
+        <h2 class="text-center">About Me and Academic Honesty</h2>
+        <div class="split">
+          <div>
+            <h2 class="text-justify">Honesty Statement</h2>
+            <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied * manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and/or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.</p>
+            <footer><b>Date: </b>April 12th, 2022</footer>
+          </div>
+          <br>
+          <div>
+            <h2>Basic Information</h2>
+            <table>
+              <tbody>
+                <tr>
+                  <td><b>Age: </b></td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td><b>Email: </b></td>
+                  <td>avsalazar-marquez@myseneca.ca</td>
+                </tr>
+                <tr>
+                  <td><b>Language: </b></td>
+                  <td>English, Spanish</td>
+                </tr>
+                <tr>
+                  <td><b>Class Section: </b></td>
+                  <td>NHH</td>
+                </tr>
+                <tr>
+                  <td><b>Student ID: </b></td>
+                  <td>159580182</td>
+                </tr>
+                <tr>
+                  <td><b>Instructor: </b></td>
+                  <td>Muath Alzghool</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark">
+      <h2 class="text-center">Education</h2>
+      <div class="container">
+        <div class="education">
+          <div class="view">
+            <h6>2008-2018</h6>
+            <h2>Colegio Bilingüe de Panamá</h2>
+          </div>
+          <div class="info">
+            <h2>High School Diploma</h2>
+            <h4>Colegio Bilingüe de Panamá</h4>
+            <p>Bilingual high school in Panama City, Panama. Provided studies in different areas such as Accounting, Information Technology, Mathematics, Physics and other general English and Spanish courses.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br>
+      <div class="container">
+        <div class="education">
+          <div class="view">
+            <h6>2021-2023 (Expected)</h6>
+            <h2>Seneca College</h2>
+          </div>
+          <div class="info">
+            <h2>College Diploma - Computer Programmer</h2>
+            <h4>Seneca College of Applied Arts and Technology</h4>
+            <p>Public College in the city of Toronto. Provided multiple tools in developing the skills needed to obtain employment in the areas of object oriented programming, databases, operating systems, and IT support.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary">
+      <h2 id="contact-me" class="text-center">Contact Me</h2>
+      <div class="container">
+        <form name="myForm" action="https://httpbin.org/post" onsubmit="return validateForm()" method="post">
+          <div>
+             <label for="name">Name:</label>
+             <input type="text" id="name" name="name" />
+          </div>
+          <div>
+             <label for="mail">E-mail:</label>
+             <input type="email" id="mail" name=email />
+          </div>
+          <div>
+            <label for="address">Address:</label>
+            <input type="address" id="address" name=address />
+         </div>
+         <div>
+          <label for="city">City:</label>
+          <input list="cities" id="city" name=city />
+          <datalist id="cities">
+            <option value="Calgary">
+            <option value="Montreal">
+            <option value="Ottawa">
+            <option value="Toronto">
+            <option value="Vancouver">
+          </datalist>
+       </div>
+       <div>
+        <label for="pc">Postal Code:</label>
+        <input type="pc" id="pc" name=pc />
+     </div>
+     <div>
+       <p>Reason to contact:</p>
+      <input type="radio" id="reason1" name="question" value="question" required>
+      <label for="question">Question</label>
+      <input type="radio" id="reason2" name="comment" value="comment">
+      <label for="comment">Comment</label>
+      <input type="radio" id="reason3" name="hiring" value="hiring">
+      <label for="hiring">Hiring</label>
+     </div>
+     <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+    </div>
+    <div>
+      <p>What is the language of your interest?</p>
+      <select name="what" id="what" size=2>
+          <option value="1" > C </option>
+          <option value="2" > C++ </option>
+          <option value="3" > JavaScript </option>
+       </select>        
+  </div>
+       <div class="button">
+        <button class="button" type="submit">Send</button>
+      </div>
+       </form>
+      </div>
+    </section>
+    <!-- Main JavaScript File -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
